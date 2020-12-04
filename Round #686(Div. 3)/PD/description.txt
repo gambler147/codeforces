@@ -1,0 +1,30 @@
+You are given an integer 𝑛 (𝑛>1).
+
+Your task is to find a sequence of integers 𝑎1,𝑎2,…,𝑎𝑘 such that:
+
+each 𝑎𝑖 is strictly greater than 1; 𝑎1⋅𝑎2⋅…⋅𝑎𝑘=𝑛 (i. e. the product of
+this sequence is 𝑛); 𝑎𝑖+1 is divisible by 𝑎𝑖 for each 𝑖 from 1 to 𝑘−1; 𝑘
+is the maximum possible (i. e. the length of this sequence is the maximum
+possible). If there are several such sequences, any of them is acceptable. It
+can be proven that at least one valid sequence always exists for any integer
+𝑛>1.
+
+You have to answer 𝑡 independent test cases.
+
+Input The first line of the input contains one integer 𝑡 (1≤𝑡≤5000) — the
+number of test cases. Then 𝑡 test cases follow.
+
+The only line of the test case contains one integer 𝑛 (2≤𝑛≤1010).
+
+It is guaranteed that the sum of 𝑛 does not exceed 1010 (∑𝑛≤1010).
+
+Output For each test case, print the answer: in the first line, print one
+positive integer 𝑘 — the maximum possible length of 𝑎. In the second line,
+print 𝑘 integers 𝑎1,𝑎2,…,𝑎𝑘 — the sequence of length 𝑘 satisfying the
+conditions from the problem statement.
+
+If there are several answers, you can print any. It can be proven that at least
+one valid sequence always exists for any integer 𝑛>1.
+
+Example inputCopy 4 2 360 4999999937 4998207083 outputCopy 1 2 3 2 2 90 1
+4999999937 1 4998207083 

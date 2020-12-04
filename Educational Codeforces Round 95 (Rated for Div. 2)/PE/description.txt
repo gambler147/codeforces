@@ -1,0 +1,20 @@
+You are playing a computer game. In this game, you have to fight 𝑛 monsters.
+
+To defend from monsters, you need a shield. Each shield has two parameters: its current durability 𝑎 and its defence rating 𝑏. Each monster has only one parameter: its strength 𝑑.
+
+When you fight a monster with strength 𝑑 while having a shield with current durability 𝑎 and defence 𝑏, there are three possible outcomes:
+
+if 𝑎=0, then you receive 𝑑 damage;
+if 𝑎>0 and 𝑑≥𝑏, you receive no damage, but the current durability of the shield decreases by 1;
+if 𝑎>0 and 𝑑<𝑏, nothing happens.
+The 𝑖-th monster has strength 𝑑𝑖, and you will fight each of the monsters exactly once, in some random order (all 𝑛! orders are equiprobable). You have to consider 𝑚 different shields, the 𝑖-th shield has initial durability 𝑎𝑖 and defence rating 𝑏𝑖. For each shield, calculate the expected amount of damage you will receive if you take this shield and fight the given 𝑛 monsters in random order.
+
+Input
+The first line contains two integers 𝑛 and 𝑚 (1≤𝑛,𝑚≤2⋅105) — the number of monsters and the number of shields, respectively.
+
+The second line contains 𝑛 integers 𝑑1, 𝑑2, ..., 𝑑𝑛 (1≤𝑑𝑖≤109), where 𝑑𝑖 is the strength of the 𝑖-th monster.
+
+Then 𝑚 lines follow, the 𝑖-th of them contains two integers 𝑎𝑖 and 𝑏𝑖 (1≤𝑎𝑖≤𝑛; 1≤𝑏𝑖≤109) — the description of the 𝑖-th shield.
+
+Output
+Print 𝑚 integers, where the 𝑖-th integer represents the expected damage you receive with the 𝑖-th shield as follows: it can be proven that, for each shield, the expected damage is an irreducible fraction 𝑥𝑦, where 𝑦 is coprime with 998244353. You have to print the value of 𝑥⋅𝑦−1mod998244353, where 𝑦−1 is the inverse element for 𝑦 (𝑦⋅𝑦−1mod998244353=1).

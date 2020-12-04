@@ -1,0 +1,33 @@
+Kids Seating
+
+Today the kindergarten has a new group of 𝑛 kids who need to be seated at the
+dinner table. The chairs at the table are numbered from 1 to 4𝑛. Two kids can't
+sit on the same chair. It is known that two kids who sit on chairs with numbers
+𝑎 and 𝑏 (𝑎≠𝑏) will indulge if:
+
+𝑔𝑐𝑑(𝑎,𝑏)=1 or, 𝑎 divides 𝑏 or 𝑏 divides 𝑎. 𝑔𝑐𝑑(𝑎,𝑏) — the maximum
+number 𝑥 such that 𝑎 is divisible by 𝑥 and 𝑏 is divisible by 𝑥.
+
+For example, if 𝑛=3 and the kids sit on chairs with numbers 2, 3, 4, then they
+will indulge since 4 is divided by 2 and 𝑔𝑐𝑑(2,3)=1. If kids sit on chairs
+with numbers 4, 6, 10, then they will not indulge.
+
+The teacher really doesn't want the mess at the table, so she wants to seat the
+kids so there are no 2 of the kid that can indulge. More formally, she wants no
+pair of chairs 𝑎 and 𝑏 that the kids occupy to fulfill the condition above.
+
+Since the teacher is very busy with the entertainment of the kids, she asked you
+to solve this problem.
+
+Input The first line contains one integer 𝑡 (1≤𝑡≤100) — the number of test
+cases. Then 𝑡 test cases follow.
+
+Each test case consists of one line containing an integer 𝑛 (1≤𝑛≤100) — the
+number of kids.
+
+Output Output 𝑡 lines, which contain 𝑛 distinct integers from 1 to 4𝑛 — the
+numbers of chairs that the kids should occupy in the corresponding test case. If
+there are multiple answers, print any of them. You can print 𝑛 numbers in any
+order.
+
+Example inputCopy 3 2 3 4 outputCopy 6 4 4 6 10 14 10 12 8

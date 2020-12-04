@@ -1,0 +1,41 @@
+You are given an undirected graph consisting of 𝑛 vertices and 𝑛 edges. It is
+guaranteed that the given graph is connected (i. e. it is possible to reach any
+vertex from any other vertex) and there are no self-loops and multiple edges in
+the graph.
+
+Your task is to calculate the number of simple paths of length at least 1 in the
+given graph. Note that paths that differ only by their direction are considered
+the same (i. e. you have to calculate the number of undirected paths). For
+example, paths [1,2,3] and [3,2,1] are considered the same.
+
+You have to answer 𝑡 independent test cases.
+
+Recall that a path in the graph is a sequence of vertices 𝑣1,𝑣2,…,𝑣𝑘 such
+that each pair of adjacent (consecutive) vertices in this sequence is connected
+by an edge. The length of the path is the number of edges in it. A simple path
+is such a path that all vertices in it are distinct.
+
+Input The first line of the input contains one integer 𝑡 (1≤𝑡≤2⋅104) — the
+number of test cases. Then 𝑡 test cases follow.
+
+The first line of the test case contains one integer 𝑛 (3≤𝑛≤2⋅105) — the
+number of vertices (and the number of edges) in the graph.
+
+The next 𝑛 lines of the test case describe edges: edge 𝑖 is given as a pair of
+vertices 𝑢𝑖, 𝑣𝑖 (1≤𝑢𝑖,𝑣𝑖≤𝑛, 𝑢𝑖≠𝑣𝑖), where 𝑢𝑖 and 𝑣𝑖 are
+vertices the 𝑖-th edge connects. For each pair of vertices (𝑢,𝑣), there is at
+most one edge between 𝑢 and 𝑣. There are no edges from the vertex to itself.
+So, there are no self-loops and multiple edges in the graph. The graph is
+undirected, i. e. all its edges are bidirectional. The graph is connected, i. e.
+it is possible to reach any vertex from any other vertex by moving along the
+edges of the graph.
+
+It is guaranteed that the sum of 𝑛 does not exceed 2⋅105 (∑𝑛≤2⋅105).
+
+Output For each test case, print one integer: the number of simple paths of
+length at least 1 in the given graph. Note that paths that differ only by their
+direction are considered the same (i. e. you have to calculate the number of
+undirected paths).
+
+Example inputCopy 3 3 1 2 2 3 1 3 4 1 2 2 3 3 4 4 2 5 1 2 2 3 1 3 2 5 4 3
+outputCopy 6 11 18

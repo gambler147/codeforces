@@ -1,0 +1,23 @@
+Vova decided to clean his room. The room can be represented as the coordinate axis 𝑂𝑋. There are 𝑛 piles of trash in the room, coordinate of the 𝑖-th pile is the integer 𝑝𝑖. All piles have different coordinates.
+
+Let's define a total cleanup as the following process. The goal of this process is to collect all the piles in no more than two different 𝑥 coordinates. To achieve this goal, Vova can do several (possibly, zero) moves. During one move, he can choose some 𝑥 and move all piles from 𝑥 to 𝑥+1 or 𝑥−1 using his broom. Note that he can't choose how many piles he will move.
+
+Also, there are two types of queries:
+
+0 𝑥 — remove a pile of trash from the coordinate 𝑥. It is guaranteed that there is a pile in the coordinate 𝑥 at this moment.
+1 𝑥 — add a pile of trash to the coordinate 𝑥. It is guaranteed that there is no pile in the coordinate 𝑥 at this moment.
+Note that it is possible that there are zero piles of trash in the room at some moment.
+
+Vova wants to know the minimum number of moves he can spend if he wants to do a total cleanup before any queries. He also wants to know this number of moves after applying each query. Queries are applied in the given order. Note that the total cleanup doesn't actually happen and doesn't change the state of piles. It is only used to calculate the number of moves.
+
+For better understanding, please read the Notes section below to see an explanation for the first example.
+
+Input
+The first line of the input contains two integers 𝑛 and 𝑞 (1≤𝑛,𝑞≤105) — the number of piles in the room before all queries and the number of queries, respectively.
+
+The second line of the input contains 𝑛 distinct integers 𝑝1,𝑝2,…,𝑝𝑛 (1≤𝑝𝑖≤109), where 𝑝𝑖 is the coordinate of the 𝑖-th pile.
+
+The next 𝑞 lines describe queries. The 𝑖-th query is described with two integers 𝑡𝑖 and 𝑥𝑖 (0≤𝑡𝑖≤1;1≤𝑥𝑖≤109), where 𝑡𝑖 is 0 if you need to remove a pile from the coordinate 𝑥𝑖 and is 1 if you need to add a pile to the coordinate 𝑥𝑖. It is guaranteed that for 𝑡𝑖=0 there is such pile in the current set of piles and for 𝑡𝑖=1 there is no such pile in the current set of piles.
+
+Output
+Print 𝑞+1 integers: the minimum number of moves Vova needs to do a total cleanup before the first query and after each of 𝑞 queries.

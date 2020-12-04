@@ -1,0 +1,17 @@
+Mr. Chanek The Ninja is one day tasked with a mission to handle mad snakes that are attacking a site. Now, Mr. Chanek already arrived at the hills where the destination is right below these hills. The mission area can be divided into a grid of size 1000×1000 squares. There are 𝑁 mad snakes on the site, the i'th mad snake is located on square (𝑋𝑖,𝑌𝑖) and has a danger level 𝐵𝑖.
+
+Mr. Chanek is going to use the Shadow Clone Jutsu and Rasengan that he learned from Lord Seventh to complete this mission. His attack strategy is as follows:
+
+Mr. Chanek is going to make 𝑀 clones.
+Each clone will choose a mad snake as the attack target. Each clone must pick a different mad snake to attack.
+All clones jump off the hills and attack their respective chosen target at once with Rasengan of radius 𝑅. If the mad snake at square (𝑋,𝑌) is attacked with a direct Rasengan, it and all mad snakes at squares (𝑋′,𝑌′) where 𝑚𝑎𝑥(|𝑋′−𝑋|,|𝑌′−𝑌|)≤𝑅 will die.
+The real Mr. Chanek will calculate the score of this attack. The score is defined as the square of the sum of the danger levels of all the killed snakes.
+Now Mr. Chanek is curious, what is the sum of scores for every possible attack strategy? Because this number can be huge, Mr. Chanek only needs the output modulo 109+7.
+
+Input
+The first line contains three integers 𝑁 𝑀 𝑅 (1≤𝑀≤𝑁≤2⋅103,0≤𝑅<103), the number of mad snakes, the number of clones, and the radius of the Rasengan.
+
+The next 𝑁 lines each contains three integers, 𝑋𝑖, 𝑌𝑖, dan 𝐵𝑖 (1≤𝑋𝑖,𝑌𝑖≤103,1≤𝐵𝑖≤106). It is guaranteed that no two mad snakes occupy the same square.
+
+Output
+A line with an integer that denotes the sum of scores for every possible attack strategy.

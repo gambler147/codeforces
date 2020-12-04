@@ -1,0 +1,33 @@
+Unique bid auction
+
+There is a game called "Unique Bid Auction". You can read more about it here:
+https://en.wikipedia.org/wiki/Unique_bid_auction (though you don't have to do it
+to solve this problem).
+
+Let's simplify this game a bit. Formally, there are 𝑛 participants, the 𝑖-th
+participant chose the number 𝑎𝑖. The winner of the game is such a participant
+that the number he chose is unique (i. e. nobody else chose this number except
+him) and is minimal (i. e. among all unique values of 𝑎 the minimum one is the
+winning one).
+
+Your task is to find the index of the participant who won the game (or -1 if
+there is no winner). Indexing is 1-based, i. e. the participants are numbered
+from 1 to 𝑛.
+
+You have to answer 𝑡 independent test cases.
+
+Input The first line of the input contains one integer 𝑡 (1≤𝑡≤2⋅104) — the
+number of test cases. Then 𝑡 test cases follow.
+
+The first line of the test case contains one integer 𝑛 (1≤𝑛≤2⋅105) — the
+number of participants. The second line of the test case contains 𝑛 integers
+𝑎1,𝑎2,…,𝑎𝑛 (1≤𝑎𝑖≤𝑛), where 𝑎𝑖 is the 𝑖-th participant chosen number.
+
+It is guaranteed that the sum of 𝑛 does not exceed 2⋅105 (∑𝑛≤2⋅105).
+
+Output For each test case, print the answer — the index of the participant who
+won the game (or -1 if there is no winner). Note that the answer is always
+unique.
+
+Example inputCopy 6 2 1 1 3 2 1 3 4 2 2 2 3 1 1 5 2 3 2 4 2 6 1 1 5 5 4 4
+outputCopy -1 2 4 1 2 -1
