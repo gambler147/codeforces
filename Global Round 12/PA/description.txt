@@ -1,0 +1,31 @@
+A string 𝑏 is a subsequence of a string 𝑎 if 𝑏 can be obtained from 𝑎 by
+deletion of several (possibly, zero or all) characters. For example, "xy" is a
+subsequence of "xzyw" and "xy", but not "yx".
+
+You are given a string 𝑎. Your task is to reorder the characters of 𝑎 so that
+"trygub" is not a subsequence of the resulting string.
+
+In other words, you should find a string 𝑏 which is a permutation of symbols of
+the string 𝑎 and "trygub" is not a subsequence of 𝑏.
+
+We have a truly marvelous proof that any string can be arranged not to contain
+"trygub" as a subsequence, but this problem statement is too short to contain
+it.
+
+Input The first line contains a single integer 𝑡 (1≤𝑡≤100) — the number of
+test cases.
+
+The first line of each test case contains a single integer 𝑛 (1≤𝑛≤200) — the
+length of 𝑎.
+
+The next line contains the string 𝑎 of length 𝑛, consisting of lowercase
+English letters.
+
+Output For each test case, output a string 𝑏 of length 𝑛 which is a
+permutation of characters of the string 𝑎, and such that "trygub" is not a
+subsequence of it.
+
+If there exist multiple possible strings 𝑏, you can print any.
+
+Example inputCopy 3 11 antontrygub 15 bestcoordinator 19 trywatchinggurabruh
+outputCopy bugyrtnotna bestcoordinator bruhtrywatchinggura
