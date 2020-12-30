@@ -1,0 +1,32 @@
+You want to build a fence that will consist of 𝑛 equal sections. All sections
+have a width equal to 1 and height equal to 𝑘. You will place all sections in
+one line side by side.
+
+Unfortunately, the ground beneath the fence is not flat. For simplicity, you can
+think that the ground level under the 𝑖-th section is equal to ℎ𝑖.
+
+You should follow several rules to build the fence:
+
+the consecutive sections should have a common side of length at least 1; the
+first and the last sections should stand on the corresponding ground levels; the
+sections between may be either on the ground level or higher, but not higher
+than 𝑘−1 from the ground level ℎ𝑖 (the height should be an integer); One of
+possible fences (blue color) for the first test case Is it possible to build a
+fence that meets all rules?
+
+Input The first line contains a single integer 𝑡 (1≤𝑡≤104) — the number of
+test cases.
+
+The first line of each test case contains two integers 𝑛 and 𝑘 (2≤𝑛≤2⋅105;
+2≤𝑘≤108) — the number of sections in the fence and the height of each section.
+
+The second line of each test case contains 𝑛 integers ℎ1,ℎ2,…,ℎ𝑛 (0≤ℎ𝑖≤108),
+where ℎ𝑖 is the ground level beneath the 𝑖-th section.
+
+It's guaranteed that the sum of 𝑛 over test cases doesn't exceed 2⋅105.
+
+Output For each test case print YES if it's possible to build the fence that
+meets all rules. Otherwise, print NO.
+
+You may print each letter in any case (for example, YES, Yes, yes, yEs will all
+be recognized as positive answer).
