@@ -1,0 +1,24 @@
+You have an array 𝑎1,𝑎2,…,𝑎𝑛 where 𝑎𝑖=𝑖.
+
+In one step, you can choose two indices 𝑥 and 𝑦 (𝑥≠𝑦) and set
+𝑎𝑥=⌈𝑎𝑥𝑎𝑦⌉ (ceiling function).
+
+Your goal is to make array 𝑎 consist of 𝑛−1 ones and 1 two in no more than
+𝑛+5 steps. Note that you don't have to minimize the number of steps.
+
+Input The first line contains a single integer 𝑡 (1≤𝑡≤1000) — the number of
+test cases.
+
+The first and only line of each test case contains the single integer 𝑛
+(3≤𝑛≤2⋅105) — the length of array 𝑎.
+
+It's guaranteed that the sum of 𝑛 over test cases doesn't exceed 2⋅105.
+
+Output For each test case, print the sequence of operations that will make 𝑎 as
+𝑛−1 ones and 1 two in the following format: firstly, print one integer 𝑚
+(𝑚≤𝑛+5) — the number of operations; next print 𝑚 pairs of integers 𝑥 and 𝑦
+(1≤𝑥,𝑦≤𝑛; 𝑥≠𝑦) (𝑥 may be greater or less than 𝑦) — the indices of the
+corresponding operation.
+
+It can be proven that for the given constraints it's always possible to find a
+correct sequence of operations.

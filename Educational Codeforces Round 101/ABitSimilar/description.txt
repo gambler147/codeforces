@@ -1,0 +1,34 @@
+Let's call two strings 𝑎 and 𝑏 (both of length 𝑘) a bit similar if they have
+the same character in some position, i. e. there exists at least one 𝑖∈[1,𝑘]
+such that 𝑎𝑖=𝑏𝑖.
+
+You are given a binary string 𝑠 of length 𝑛 (a string of 𝑛 characters 0
+and/or 1) and an integer 𝑘. Let's denote the string 𝑠[𝑖..𝑗] as the substring
+of 𝑠 starting from the 𝑖-th character and ending with the 𝑗-th character
+(that is, 𝑠[𝑖..𝑗]=𝑠𝑖𝑠𝑖+1𝑠𝑖+2…𝑠𝑗−1𝑠𝑗).
+
+Let's call a binary string 𝑡 of length 𝑘 beautiful if it is a bit similar to
+all substrings of 𝑠 having length exactly 𝑘; that is, it is a bit similar to
+𝑠[1..𝑘],𝑠[2..𝑘+1],…,𝑠[𝑛−𝑘+1..𝑛].
+
+Your goal is to find the lexicographically smallest string 𝑡 that is beautiful,
+or report that no such string exists. String 𝑥 is lexicographically less than
+string 𝑦 if either 𝑥 is a prefix of 𝑦 (and 𝑥≠𝑦), or there exists such 𝑖
+(1≤𝑖≤min(|𝑥|,|𝑦|)), that 𝑥𝑖<𝑦𝑖, and for any 𝑗 (1≤𝑗<𝑖) 𝑥𝑗=𝑦𝑗.
+
+Input The first line contains one integer 𝑞 (1≤𝑞≤10000) — the number of test
+cases. Each test case consists of two lines.
+
+The first line of each test case contains two integers 𝑛 and 𝑘 (1≤𝑘≤𝑛≤106).
+The second line contains the string 𝑠, consisting of 𝑛 characters (each
+character is either 0 or 1).
+
+It is guaranteed that the sum of 𝑛 over all test cases does not exceed 106.
+
+Output For each test case, print the answer as follows:
+
+if it is impossible to construct a beautiful string, print one line containing
+the string NO (note: exactly in upper case, you can't print No, for example);
+otherwise, print two lines. The first line should contain the string YES
+(exactly in upper case as well); the second line — the lexicographically
+smallest beautiful string, consisting of 𝑘 characters 0 and/or 1.
